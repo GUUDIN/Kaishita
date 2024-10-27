@@ -13,9 +13,9 @@ This document provides an in-depth explanation of the load cell and HX711 amplif
 • **Wheatstone Bridge Configuration**: The load cell operates using a Wheatstone bridge with four strain gauges, which convert mechanical deformation (weight) into a minute electrical voltage, enabling precise weight detection.
 
 <div style="text-align: center;">
-    <img src="Images/Deformed Load Cell 72.jpg" alt="Deformed Load Cell" height="200">
-    <img src="Images/Wheatstone Bridge Animation.gif" alt="Wheatstone Bridge Animation" height="200">
-    <img src="Images/wheatstone animation.gif" alt="Wheatstone Bridge Animation" height="200">
+    <img src="Images/Deformed Load Cell 72.jpg" alt="Deformed Load Cell" height="150">
+    <img src="Images/Wheatstone Bridge Animation.gif" alt="Wheatstone Bridge Animation" height="150">
+    <img src="Images/wheatstone animation.gif" alt="Wheatstone Bridge Animation" height="150">
 </div>
 
 
