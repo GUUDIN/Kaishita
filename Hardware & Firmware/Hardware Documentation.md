@@ -13,17 +13,11 @@ This document provides an in-depth explanation of the load cell and HX711 amplif
 • **Wheatstone Bridge Configuration**: The load cell operates using a Wheatstone bridge with four strain gauges, which convert mechanical deformation (weight) into a minute electrical voltage, enabling precise weight detection.
 
 <div style="text-align: center;">
-    <img src="Deformed Load Cell 72.jpg" alt="Deformed Load Cell" width="400">
-    <img src="Wheatstone Bridge Animation.gif" alt="Wheatstone Bridge Animation" width="400">
-    <img src="wheatstone animation.gif" alt="Wheatstone Bridge Animation" width="400">
+    <img src="Images/Deformed Load Cell 72.jpg" alt="Deformed Load Cell" width="400">
+    <img src="Images/Wheatstone Bridge Animation.gif" alt="Wheatstone Bridge Animation" width="400">
+    <img src="Images/wheatstone animation.gif" alt="Wheatstone Bridge Animation" width="400">
 </div>
 
-
-![[Deformed Load Cell 72.jpg]]
-
-![[Wheatstone Bridge Animation.gif]]
-
-![[wheatstone animation.gif]]
 
 • **Integration Progress**: Initial tests confirm consistent readings from the load cell, and calibration has been conducted for the expected weight range of typical vending machine items.
 
@@ -46,13 +40,18 @@ Note: The ESP32-S3 also offers advanced processing potential in concurrent tasks
 
 • **Electrical Connections**: The load cell’s Wheatstone bridge output connects to the HX711’s input, and the HX711 transmits digital weight data to the ESP32-S3 microcontroller.
 
-![[Pasted image 20241027171506.png]]
+<div style="text-align: center;">
+    <img src="Images/Diagram.png" alt="Deformed Load Cell" width="400">
+</div>
 
 • **Calibration**: Calibration steps have been carried out to ensure accuracy based on product weight ranges.
 
 • **Data Testing and Validation**: Initial tests have validated data reliability, and the setup is currently delivering stable weight measurements with minimal error.
-![[WhatsApp Image 2024-10-27 at 17.04.14.jpeg]]
-![[WhatsApp Image 2024-10-27 at 17.04.14 (1).jpeg]]
+
+<div style="text-align: center;">
+    <img src="Images/Setup.jpeg" alt="Deformed Load Cell" width="400">
+    <img src="Images/SetupPlate.jpeg" alt="Wheatstone Bridge Animation" width="400">
+</div>
 
 ## Next Steps
 
