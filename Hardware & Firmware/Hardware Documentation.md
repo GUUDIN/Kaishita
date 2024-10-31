@@ -49,8 +49,14 @@ Note: The ESP32-S3 also offers advanced processing potential in concurrent tasks
 • **Data Testing and Validation**: Initial tests have validated data reliability, and the setup is currently delivering stable weight measurements with minimal error.
 
 <div style="text-align: center;">
-    <img src="Images/Setup.jpeg" alt="Deformed Load Cell" width="400">
-    <img src="Images/SetupPlate.jpeg" alt="Wheatstone Bridge Animation" width="400">
+    <img src="Images/Setup.jpeg" alt="Setup that dind't work, without a plate" width="400">
+    <img src="Images/SetupPlate.jpeg" alt="Setup that dind't work, with a PCB as a plate" width="400">
+    <img src="Images/SetupThatWorked.jpg" alt="Setup that worked" width="400">
+</div>
+
+## Results
+<div style="text-align: center;">
+    <img src="Images/Results.jpg" alt="Measurements" width="400">
 </div>
 
 ## Next Steps
