@@ -2,7 +2,7 @@ _On the mission to develop affordable, small and custumizable vending machines t
 
 ### Kashita is a student-lead project born at USP São Carlos - Brazil.
 
-![Kashita Vending Machine](./Kaishita.jpeg)
+<img src="./Kaishita.jpeg" alt="Kashita Vending Machine" width="400"/>
 
 Here is a more detailled look into what our goals are:
 - Bring automated sales solutions that can fit anywhere
