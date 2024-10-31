@@ -56,7 +56,7 @@ Note: The ESP32-S3 also offers advanced processing potential in concurrent tasks
 
 ## Results
 <div style="text-align: center;">
-    <img src="Images/Results.jpg" alt="Measurements" width="400">
+    <img src="Images/Results.jpeg" alt="Measurements" width="400">
 </div>
 
 ## Next Steps
