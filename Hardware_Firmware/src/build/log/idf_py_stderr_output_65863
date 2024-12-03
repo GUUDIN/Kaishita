@@ -1,0 +1,11 @@
+Compiler supported targets: xtensa-esp32s3-elf
+
+ESP Insights Project commit: b852a3a-dirty
+ESP RainMaker Project commit: b852a3a-dirty
+CMake Error at /Users/pedro/esp/v5.1.4/esp-idf/tools/cmake/component.cmake:313 (message):
+  Include directory '/include' is not a directory.
+Call Stack (most recent call first):
+  /Users/pedro/esp/v5.1.4/esp-idf/tools/cmake/component.cmake:481 (__component_add_include_dirs)
+  main/CMakeLists.txt:1 (idf_component_register)
+
+

@@ -62,7 +62,6 @@
 /Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/ulp/libulp.a
 /Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/usb/libusb.a
 /Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
-/Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/main/libmain.a
 /Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/espressif__network_provisioning/libespressif__network_provisioning.a
 /Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/chmorgan__esp-libhelix-mp3/libchmorgan__esp-libhelix-mp3.a
 /Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/espressif__esp-modbus/libespressif__esp-modbus.a
@@ -86,3 +85,4 @@
 /Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/espressif__esp_rainmaker/libespressif__esp_rainmaker.a
 /Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/espressif__qrcode/libespressif__qrcode.a
 /Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/arduino/libarduino.a
+/Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/main/libmain.a

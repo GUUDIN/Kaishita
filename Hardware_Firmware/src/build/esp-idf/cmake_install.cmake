@@ -409,11 +409,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/main/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("/Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/espressif__network_provisioning/cmake_install.cmake")
 endif()
 
@@ -540,5 +535,10 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("/Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/arduino/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/main/cmake_install.cmake")
 endif()
 

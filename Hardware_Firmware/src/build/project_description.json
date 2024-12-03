@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "3Cell",
-    "project_version":    "18f3fcb-dirty",
+    "project_version":    "b852a3a-dirty",
     "project_path":       "/Users/pedro/development/Kaishita/Hardware_Firmware/src",
     "idf_path":           "/Users/pedro/esp/v5.1.4/esp-idf",
     "build_dir":          "/Users/pedro/development/Kaishita/Hardware_Firmware/src/build",
@@ -1175,13 +1175,13 @@
             "dir": "/Users/pedro/development/Kaishita/Hardware_Firmware/src/main",
             "type": "LIBRARY",
             "lib": "__idf_main",
-            "reqs": [],
+            "reqs": [ "arduino" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/pedro/development/Kaishita/Hardware_Firmware/src/build/esp-idf/main/libmain.a",
-            "sources": [ "/Users/pedro/development/Kaishita/Hardware_Firmware/src/main/3Cell.cpp" ],
-            "include_dirs": []
+            "sources": [ "/Users/pedro/development/Kaishita/Hardware_Firmware/src/main/main.cpp", "/Users/pedro/development/Kaishita/Hardware_Firmware/src/main/3Cell.cpp", "/Users/pedro/development/Kaishita/Hardware_Firmware/src/main/mqtt.cpp" ],
+            "include_dirs": [ "/Users/pedro/development/Kaishita/Hardware_Firmware/src/main/../include" ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -2463,11 +2463,11 @@
             "prefix": "idf",
             "dir": "/Users/pedro/development/Kaishita/Hardware_Firmware/src/main",
             "lib": "__idf_main",
-            "reqs": [],
+            "reqs": [ "arduino" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": []
+            "include_dirs": [ "/Users/pedro/development/Kaishita/Hardware_Firmware/src/main/../include" ]
         },
         "arduino": {
             "alias": "idf::arduino",

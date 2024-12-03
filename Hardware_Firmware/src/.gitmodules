@@ -1,0 +1,9 @@
+[submodule "main/littlefs"]
+	path = src/littlefs
+	url = https://github.com/littlefs-project/littlefs.git
+[submodule "submodules/stm32-cmake"]
+	path = submodules/stm32-cmake
+	url = https://github.com/ObKo/stm32-cmake.git
+[submodule "libhelix-mp3"]
+	path = libhelix-mp3
+	url = https://github.com/chmorgan/libhelix-mp3.git

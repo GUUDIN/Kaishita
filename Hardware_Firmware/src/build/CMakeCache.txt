@@ -23,6 +23,9 @@
 //Value Computed by CMake
 3Cell_SOURCE_DIR:STATIC=/Users/pedro/development/Kaishita/Hardware_Firmware/src
 
+//No help, variable specified on the command line.
+CCACHE_ENABLE:UNINITIALIZED=0
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/Users/pedro/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-addr2line
 
@@ -338,6 +341,9 @@ Mbed TLS_IS_TOP_LEVEL:STATIC=OFF
 Mbed TLS_SOURCE_DIR:STATIC=/Users/pedro/esp/v5.1.4/esp-idf/components/mbedtls/mbedtls
 
 //No help, variable specified on the command line.
+PYTHON:UNINITIALIZED=/Users/pedro/.espressif/python_env/idf5.1_py3.13_env/bin/python
+
+//No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
 
 //Allow unsafe builds. These builds ARE NOT SECURE.
@@ -567,7 +573,7 @@ C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS:INTERNAL=1
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/opt/homebrew/bin/git][v2.45.2()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/pedro/.espressif/python_env/idf5.1_py3.12_env/bin/python][cfound components: Interpreter ][v3.12.6()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/pedro/.espressif/python_env/idf5.1_py3.13_env/bin/python][cfound components: Interpreter ][v3.13.0()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //Have include stddef.h
@@ -582,8 +588,8 @@ HAVE_TIME_T_SIZE:INTERNAL=TRUE
 TIME_T_SIZE:INTERNAL=8
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
-_Python3_EXECUTABLE:INTERNAL=/Users/pedro/.espressif/python_env/idf5.1_py3.12_env/bin/python
+_Python3_EXECUTABLE:INTERNAL=/Users/pedro/.espressif/python_env/idf5.1_py3.13_env/bin/python
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;6;32;;;/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12;/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12;/Users/pedro/.espressif/python_env/idf5.1_py3.12_env/lib/python3.12/site-packages;/Users/pedro/.espressif/python_env/idf5.1_py3.12_env/lib/python3.12/site-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=5b0bb93a3ccbad8986f2ce87ff0c69e4
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;13;0;32;;;/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13;/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13;/Users/pedro/.espressif/python_env/idf5.1_py3.13_env/lib/python3.13/site-packages;/Users/pedro/.espressif/python_env/idf5.1_py3.13_env/lib/python3.13/site-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=565ccb0944cd7af0f983c44d89a69e72
 
