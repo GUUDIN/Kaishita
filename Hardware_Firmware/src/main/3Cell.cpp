@@ -12,6 +12,9 @@
 // #define LOADCELL3_DOUT_PIN 13
 // #define LOADCELL3_SCK_PIN 14
 
+// Number of samples to average for smoothing
+#define NUM_SAMPLES 3
+
 // HX711 objects for each load cell
 HX711 scale1;
 HX711 scale2;
@@ -21,6 +24,10 @@ HX711 scale2;
 float calibration_factor1 = 2380;
 float calibration_factor2 = 2340;
 //float calibration_factor3 = 2038;
+
+// Buffer to store the last NUM_SAMPLES weights for smoothing
+float weightBuffer[NUM_SAMPLES];
+int bufferIndex = 0;
 
 // Initialize scales (pin configuration + initial calibration)
 void init_scales() {
@@ -57,10 +64,7 @@ void tareScales() {
     Serial.println("Scales tared successfully!");
 }
 
-#define NUM_SAMPLES 3
-float weightBuffer[NUM_SAMPLES];
-int bufferIndex = 0;
-
+// Function to get the smoothed weight given 3 samples
 float getSmoothedWeight(float currentWeight) {
     weightBuffer[bufferIndex] = currentWeight;
     bufferIndex = (bufferIndex + 1) % NUM_SAMPLES;

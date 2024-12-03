@@ -12,7 +12,7 @@ extern "C" void app_main(void) {
     // Initialize HX711 scales
     init_scales();
 
-        // Connect to Wi-Fi
+    // Connect to Wi-Fi
     WiFiManager wifiManager;
     wifiManager.autoConnect("ESP32-Scales");
 
@@ -29,7 +29,7 @@ extern "C" void app_main(void) {
 
     // Main loop
     while (true) {
-        float totalWeight = getTotalWeight();
+        float totalWeight = getTotalWeight(); // Prints the raw total weight on the monitor
         // float totalWeight = getSmoothedWeight(getTotalWeight());
         // if (fabs(totalWeight) < 0.2) totalWeight = 0.0;
         printf("Current Total Weight: %.2f grams\n", totalWeight);

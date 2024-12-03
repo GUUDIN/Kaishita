@@ -43,6 +43,7 @@ void publishWeight() {
     Serial.println(message);
 }
 
+// Callback function to handle incoming MQTT messages
 void callback(char* topic, byte* payload, unsigned int length) {
     String message;
     for (unsigned int i = 0; i < length; i++) {
