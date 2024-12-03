@@ -1,0 +1,15 @@
+# Ignore build artifacts
+build/
+*.elf
+*.bin
+*.o
+
+# Ignore old config files
+sdkconfig.old
+
+# Ignore logs
+*.log
+
+# Ignore Python cache and macOS files
+*.pyc
+.DS_Store
