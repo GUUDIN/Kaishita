@@ -7,3 +7,9 @@
 [submodule "libhelix-mp3"]
 	path = libhelix-mp3
 	url = https://github.com/chmorgan/libhelix-mp3.git
+[submodule "components/WiFiManager"]
+    path = components/WiFiManager
+    url = https://github.com/tzapu/WiFiManager.git
+[submodule "components/arduino/libraries/pubsubclient"]
+    path = components/arduino/libraries/pubsubclient
+    url = https://github.com/knolleary/pubsubclient.git
