@@ -1,0 +1,6 @@
+[submodule "Hardware_Firmware/src/components/components/arduino/libraries/WiFiManager"]
+	path = Hardware_Firmware/src/components/components/arduino/libraries/WiFiManager
+	url = https://github.com/tzapu/WiFiManager.git
+[submodule "Hardware_Firmware/src/components/components/arduino/libraries/pubsubclient"]
+	path = Hardware_Firmware/src/components/components/arduino/libraries/pubsubclient
+	url = https://github.com/knolleary/pubsubclient.git

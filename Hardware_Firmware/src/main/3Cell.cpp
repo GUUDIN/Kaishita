@@ -1,5 +1,6 @@
 #include "HX711.h"
 #include "arduino.h"
+#include "3Cell.h"
 
 extern "C" {
 #include <stdio.h>
@@ -30,6 +31,10 @@ float calibration_factor1 = 2380;
 float calibration_factor2 = 2340;
 float calibration_factor3 = 2038;
 
+// #define CALIBWEIGHT 0.75 // calibration weight in kg
+// #define DEFAULTFACTOR -7050 // calibration weight in kg
+// #define LB2KG 0.45352 // Pounds to Kg
+
 // UART configuration
 #define UART_NUM UART_NUM_0
 #define UART_BUF_SIZE 1024
@@ -53,35 +58,35 @@ void calibrate_scales() {
     printf("Scale 2 Zero factor: %ld\n", scale2.read_average());
     printf("Scale 3 Zero factor: %ld\n", scale3.read_average());
 
-    printf("Calibration started. Place a known weight on each scale.\n");
-    printf("Use '+' or '-' to adjust all calibration factors.\n");
+    // printf("Calibration started. Place a known weight on each scale.\n");
+    // printf("Use '+' or '-' to adjust all calibration factors.\n");
 }
 
-void handle_calibration_input() {
-    uint8_t data[UART_BUF_SIZE];
-    int len = uart_read_bytes(UART_NUM, data, UART_BUF_SIZE, 20 / portTICK_PERIOD_MS);
+// void handle_calibration_input() {
+//     uint8_t data[UART_BUF_SIZE];
+//     int len = uart_read_bytes(UART_NUM, data, UART_BUF_SIZE, 20 / portTICK_PERIOD_MS);
 
-    if (len > 0) {
-        for (int i = 0; i < len; i++) {
-            if (data[i] == '+' || data[i] == 'a') {
-                calibration_factor1 += 10;
-                calibration_factor2 += 10;
-                calibration_factor3 += 10;
-            } else if (data[i] == '-' || data[i] == 'z') {
-                calibration_factor1 -= 10;
-                calibration_factor2 -= 10;
-                calibration_factor3 -= 10;
-            }
+//     if (len > 0) {
+//         for (int i = 0; i < len; i++) {
+//             if (data[i] == '+' || data[i] == 'a') {
+//                 calibration_factor1 += 10;
+//                 calibration_factor2 += 10;
+//                 calibration_factor3 += 10;
+//             } else if (data[i] == '-' || data[i] == 'z') {
+//                 calibration_factor1 -= 10;
+//                 calibration_factor2 -= 10;
+//                 calibration_factor3 -= 10;
+//             }
 
-            // Apply updated calibration factors
-            scale1.set_scale(calibration_factor1);
-            scale2.set_scale(calibration_factor2);
-            scale3.set_scale(calibration_factor3);
+//             // Apply updated calibration factors
+//             scale1.set_scale(calibration_factor1);
+//             scale2.set_scale(calibration_factor2);
+//             scale3.set_scale(calibration_factor3);
 
-            printf("Updated calibration factors: %.2f, %.2f, %.2f\n", calibration_factor1, calibration_factor2, calibration_factor3);
-        }
-    }
-}
+//             printf("Updated calibration factors: %.2f, %.2f, %.2f\n", calibration_factor1, calibration_factor2, calibration_factor3);
+//         }
+//     }
+// }
 
 extern "C" void app_main(void) {
     // Initialize UART for calibration input
@@ -110,7 +115,8 @@ extern "C" void app_main(void) {
         // Display current reading for each scale
         float weight1 = scale1.get_units();
         float weight2 = scale2.get_units();
-        float weight3 = scale3.get_units();
+        // float weight3 = scale3.get_units();
+        float weight3 = 0; // scale3 is not connected (broken wire)
         float totalWeight = weight1 + weight2 + weight3;
 
         printf("Weight 1: %.2f grams, Weight 2: %.2f grams, Weight 3: %.2f grams, Total Weight: %.2f grams\n",
