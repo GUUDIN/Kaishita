@@ -99,6 +99,7 @@ set(ARDUINO_ALL_LIBRARIES
   OpenThread
   PPP
   Preferences
+  pubsubclient
   RainMaker
   SD_MMC
   SD
@@ -118,6 +119,7 @@ set(ARDUINO_ALL_LIBRARIES
 
 # List of my libraries with their source files and required components
 set(ARDUINO_LIBRARY_hx711_SRCS libraries/hx711/src/HX711.cpp)
+set(ARDUINO_LIBRARY_pubsubclient_SRCS libraries/pubsubclient/src/PubSubClient.cpp)
 
 # List of all OG libraries with their source files and required components
 
