@@ -9,8 +9,8 @@
 #define LOADCELL2_DOUT_PIN 11
 #define LOADCELL2_SCK_PIN 12
 
-// #define LOADCELL3_DOUT_PIN 13
-// #define LOADCELL3_SCK_PIN 14
+#define LOADCELL3_DOUT_PIN 13
+#define LOADCELL3_SCK_PIN 14
 
 // Number of samples to average for smoothing
 #define NUM_SAMPLES 3
@@ -18,12 +18,12 @@
 // HX711 objects for each load cell
 HX711 scale1;
 HX711 scale2;
-//HX711 scale3;
+HX711 scale3;
 
 // Calibration factors for each load cell
 float calibration_factor1 = 2380;
 float calibration_factor2 = 2340;
-//float calibration_factor3 = 2038;
+float calibration_factor3 = 2038;
 
 // Buffer to store the last NUM_SAMPLES weights for smoothing
 float weightBuffer[NUM_SAMPLES];
@@ -34,7 +34,7 @@ void init_scales() {
     // Initialize each HX711
     scale1.begin(LOADCELL1_DOUT_PIN, LOADCELL1_SCK_PIN);
     scale2.begin(LOADCELL2_DOUT_PIN, LOADCELL2_SCK_PIN);
-    //scale3.begin(LOADCELL3_DOUT_PIN, LOADCELL3_SCK_PIN);
+    scale3.begin(LOADCELL3_DOUT_PIN, LOADCELL3_SCK_PIN);
 
     // Check if scales are ready
     // add || !scale3.is_ready() if you have 3 load cells
@@ -46,12 +46,12 @@ void init_scales() {
     // Apply calibration factors
     scale1.set_scale(calibration_factor1);
     scale2.set_scale(calibration_factor2);
-    //scale3.set_scale(calibration_factor3);
+    scale3.set_scale(calibration_factor3);
 
     // Tare scales to zero
     scale1.tare();
     scale2.tare();
-    //scale3.tare();
+    scale3.tare();
 
     printf("Scales initialized and tared successfully.\n");
 }
@@ -60,7 +60,7 @@ void init_scales() {
 void tareScales() {
     scale1.tare();
     scale2.tare();
-    //scale3.tare();
+    scale3.tare();
     Serial.println("Scales tared successfully!");
 }
 
@@ -81,12 +81,7 @@ float getSmoothedWeight(float currentWeight) {
 float getTotalWeight() {
     float weight1 = scale1.get_units();
     float weight2 = scale2.get_units();
-    //float weight3 = 0;
+    float weight3 = scale3.get_units();
 
-    // if (scale3.is_ready()) {
-    //     weight3 = scale3.get_units();
-    // }
-
-    return weight1 + weight2;
-    // return weight1 + weight2 + weight3;
+    return weight1 + weight2 + weight3;
 }
