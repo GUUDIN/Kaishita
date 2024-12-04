@@ -192,21 +192,21 @@ The ESP32 firmware leverages the Arduino component within the ESP-IDF framework 
 
 <details>
 <summary>Click to view Serial Monitor Output</summary>
-<img src="./Images/SerialMonitorOutput.png" alt="Serial Monitor Output" width="500"/>
+<img src="./Images/SerialMonitorOutput.jpeg" alt="Serial Monitor Output" width="500"/>
 </details>
 
 ### Website UI
 
 <details>
 <summary>Click to view Website UI</summary>
-<img src="./Images/WebsiteUI.png" alt="Website UI" width="500"/>
+<img src="./Images/WebsiteUI.jpeg" alt="Website UI" width="500"/>
 </details>
 
 ### Project Setup
 
 <details>
 <summary>Click to view Project Setup</summary>
-<img src="./Images/ProjectSetup.png" alt="Project Setup" width="500"/>
+<img src="./Images/ProjectSetup.jpeg" alt="Project Setup" width="500"/>
 </details>
 
 ## Next Steps
