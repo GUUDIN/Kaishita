@@ -35,8 +35,8 @@ This branch of the Kaishita project focuses on a technical implementation of an 
 Hardware_Firmware/   # ESP32 firmware code for the weight scale
 ├── components/    # External libraries and Arduino component
 │    ├── arduino/         # Arduino libraries for ESP-IDF compatibility
-|    |    ├── libraries/
-|    |        ├── pubsubclient/    # MQTT library for Arduino
+│    │    ├── libraries/
+│    │        ├── pubsubclient/    # MQTT library for Arduino
 │    ├── WiFiManager/     # Wi-Fi management library
 │
 ├── include/       # Header files for MQTT and weight scale management
