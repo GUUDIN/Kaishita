@@ -28,7 +28,7 @@ This document provides an in-depth explanation of the load cell and HX711 amplif
 
 • **Amplification**: The HX711 amplifies the low-voltage signal from the load cell, allowing the system to capture minute weight changes.
 
-• **Digital Output**: The HX711’s ADC translates the analog signal into digital data, enabling easy integration with the vending machine software for weight processing.
+• **Digital Output**: The HX711’s ADC translates the analog signal into digital data, sending it through a *proprietary serial protocol*. This enables easy integration with the vending machine software for weight processing.
 
 ### 3. ESP32-S3 (Microcontroller)
 
@@ -64,5 +64,3 @@ Note: The ESP32-S3 also offers advanced processing potential in concurrent tasks
 • **3D Printed Structure**: To improve measurement accuracy and balance, a custom 3D-printed base will be developed for housing three load cells. This will support better calibration and stability in readings.
 
 • **Improved Calibration**: After assembling the enhanced structure, calibration will be refined to account for the three-cell setup, further enhancing accuracy.
-
-• **Firmware Enhancements**: The next steps involve fine-tuning the firmware to manage threshold-based item verification and optimize stabilization algorithms to achieve rapid, reliable weight measurements.
