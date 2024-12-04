@@ -35,8 +35,10 @@ This branch of the Kaishita project focuses on a technical implementation of an 
 Hardware_Firmware/   # ESP32 firmware code for the weight scale
 ├── components/    # External libraries and Arduino component
 │    ├── arduino/         # Arduino libraries for ESP-IDF compatibility
+|    |    ├── libraries/
+|    |        ├── pubsubclient/    # MQTT library for Arduino
 │    ├── WiFiManager/     # Wi-Fi management library
-│    ├── pubsubclient/    # MQTT library for Arduino
+│
 ├── include/       # Header files for MQTT and weight scale management
 ├── main/          # Source code for firmware logic
 │    ├── 3Cell.cpp         # HX711 scale logic
@@ -69,13 +71,11 @@ Website/             # Raspberry Pi website code
 
 ---
 
-## **Hardware Requirements**
+## **Hardware Requirements (What we used)**
 - **ESP32-S3 Development Board**
 - **HX711 Modules** (up to 3)
 - **Load Cells**
-- **Raspberry Pi 4**
-- **Power Supply**
-- **Wi-Fi Router**
+- **Raspberry Pi 3B**
 
 ---
 
@@ -105,7 +105,7 @@ This current state of the the project is *only* available at the _feature/mqtt-w
     idf.py add-dependency "knolleary/pubsubclient"
     ```
 4. Configure Wi-Fi and MQTT broker details in `main/mqtt.cpp`.
-    ```Cpp
+    ```cpp
     const char* mqtt_server = "YOUR_MQTT_BROKER_ADDRESS"; // e.g: EMQX broker
     const int mqtt_port = YOUR_MQTT_BROKER_PORT;
     ```
@@ -164,6 +164,7 @@ xTaskCreate([](void*) {
         vTaskDelay(1000 / portTICK_PERIOD_MS); // Publish every second
     }
 }, "MQTT Publish Task", 4096, NULL, 1, NULL);
+```
 
 The tasks operate independently, ensuring timely data processing and transmission without interference.
 
