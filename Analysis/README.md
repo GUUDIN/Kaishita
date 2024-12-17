@@ -61,7 +61,7 @@ The CSV file must contain the following columns:
 | Column       | Description                     |
 | ------------ | ------------------------------- |
 | `data`       | Purchase date (YYYY-MM-DD)      |
-| `hora`       | Purchase hour (0-24)            |
+| `hora`       | Purchase time (HH:MM:SS)        |
 | `produto`    | Product name                    |
 | `quantidade` | Quantity purchased              |
 
@@ -69,14 +69,21 @@ The CSV file must contain the following columns:
 
 ```csv
 data,hora,produto,quantidade
-2024-01-01,8,KitKat,10
-2024-01-01,14,Mentos,5
-2024-01-01,20,Bala,7
-2024-01-02,9,Pirulito,3
+2024-01-01,08:00:00,KitKat,10
+2024-01-01,14:30:00,Mentos,5
+2024-01-01,20:15:00,Bala,7
+2024-01-02,09:45:00,Pirulito,3
 ```
 
 ## Results
 
 - **Trend Graphs**: Shows the total quantity of each product at different times of the day.
+<details>
+<summary>Click to view Trend Graph example</summary>
+<img src="./Images/graph_example.jpeg" alt="Project Setup" width="500"/>
+</details>
 - **Purchase Probabilities**: Calculates the probability of purchasing each product during each time period (morning, afternoon, and evening).
-
+<details>
+<summary>Click to view Purchase Probabilities example</summary>
+<img src="./Images/probabilities_example.jpeg" alt="Project Setup" width="500"/>
+</details>
