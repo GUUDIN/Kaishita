@@ -69,7 +69,7 @@ Note: The ESP32-S3 also offers advanced processing potential in concurrent tasks
 The vending machine's weight data is published using MQTT communication, following the **Publisher -> Broker -> Subscriber** model:
 
 <div align="center">
-    <img src="Kaishita/Images/MQTT.jpg" alt="MQTT Communication" width="600">
+    <img src="Images/MQTT.jpg" alt="MQTT Communication" width="600">
 </div>
 
 - **Publisher**: The ESP32 firmware publishes the measured weight in grams as a string.
