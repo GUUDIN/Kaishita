@@ -1,0 +1,1 @@
+import{j as t}from"./jsx-runtime-56DGgGmo.js";const i=()=>[{title:"Index"},{name:"description",content:"Getting client"}];function r(){return t.jsx("div",{style:e.container,children:t.jsx("h1",{children:"Loading client..."})})}const e={container:{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",height:"100vh"}};export{r as default,i as meta};

@@ -1,0 +1,10 @@
+{
+    "files": [
+      "build",
+      "settup-dependencies.js",
+      "package.json",
+      "package-lock.json"
+    ],
+    "output": "build.zip"
+  }
+  

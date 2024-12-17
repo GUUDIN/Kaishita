@@ -1,0 +1,18 @@
+{
+    "address": {
+        "brokerUrl": "mqtt://andromeda.lasdpc.icmc.usp.br:5012",
+        "weightTopic": "peso"
+    },
+    "paths": {
+        "buyHistoryPath": "app/.server/data/buyHistory.csv",
+        "productListPath": "app/.server/data/productList.csv",
+        "weightFilePath": "app/.server/data/weight.txt",
+        "mqttLogPath": "app/.server/data/mqttLog.txt"
+    },
+    "constants": {
+        "targetWeightTolerance": 5,
+        "sameWeightTolerance": 2,
+        "weightHistorySize": 10,
+        "stableWeight": 2
+    }
+}
