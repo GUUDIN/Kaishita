@@ -52,7 +52,7 @@ The Kaishita vending machine integrates **weight sensors**, **MQTT communication
    - [Analysis Script Setup](#analysis-script-setup)
 7. [Example CSV File Format](#example-csv-file-format)
 8. [Results](#results)
-9. [Project Images](#see-the-current-state-of-the-project!)
+9. [Project Images](#website-ui)
    - [Website UI](#website-ui)
    - [Serial Monitor Output](#serial-monitor-output)
    - [Project Setup](#project-setup)
