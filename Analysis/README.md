@@ -82,6 +82,7 @@ data,hora,produto,quantidade
 <summary>Click to view Trend Graph example</summary>
 <img src="./Images/graph_example.jpeg" alt="Project Setup" width="500"/>
 </details>
+
 - **Purchase Probabilities**: Calculates the probability of purchasing each product during each time period (morning, afternoon, and evening).
 <details>
 <summary>Click to view Purchase Probabilities example</summary>
