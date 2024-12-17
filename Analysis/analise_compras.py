@@ -8,14 +8,12 @@ def carregar_dados():
         arquivo_csv = input("Digite o caminho completo do arquivo CSV: ").strip()
         
         # Lê o arquivo
-        dados = pd.read_csv(arquivo_csv)
+        dados = pd.read_csv(arquivo_csv, header=None, names=["data", "hora", "produto", "quantidade"])
         
-        # Garantir que as colunas necessárias existem
-        if 'produto' not in dados.columns or 'hora' not in dados.columns or 'quantidade' not in dados.columns:
-            raise ValueError("O CSV deve conter as colunas 'produto', 'hora' e 'quantidade'.")
+        # Extrair apenas a hora do formato HH:MM:SS
+        dados['hora'] = pd.to_datetime(dados['hora'], format="%H:%M:%S", errors='coerce').dt.hour
         
-        # Converter coluna 'hora' e 'quantidade' para numérico
-        dados['hora'] = pd.to_numeric(dados['hora'], errors='coerce')
+        # Converter coluna 'quantidade' para numérico
         dados['quantidade'] = pd.to_numeric(dados['quantidade'], errors='coerce')
 
         # Remover registros inválidos
