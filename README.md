@@ -42,18 +42,22 @@ The Kaishita vending machine integrates **weight sensors**, **MQTT communication
 
 ## **Table of Contents**
 
-1. [Overview](#overview)
-2. [Project Structure](#project-structure)
-3. [Features](#features)
-4. [Hardware Requirements](#hardware-requirements)
-5. [Setup Instructions](#setup-instructions)
-6. [How It Works](#how-it-works)
-7. [ESP32 Task Management with FreeRTOS](#esp32-task-management-with-freertos)
-8. [Arduino Component Integration](#arduino-component-integration)
-9. [MQTT Topics and Payloads](#mqtt-topics-and-payloads)
-10. [Next Steps](#next-steps)
-11. [Development Environment](#development-environment)
-12. [Credits](#credits)
+1. [Project Overview](#project-overview)
+2. [Goals](#goals)
+3. [How It Works](#how-it-works)
+4. [Project Structure](#project-structure)
+5. [Key Features](#key-features)
+6. [Setup Instructions](#setup-instructions)
+   - [ESP32 Firmware](#esp32-firmware)
+   - [Analysis Script Setup](#analysis-script-setup)
+7. [Example CSV File Format](#example-csv-file-format)
+8. [Results](#results)
+9. [Additional Images](#additional-images)
+   - [Website UI](#website-ui)
+   - [Serial Monitor Output](#serial-monitor-output)
+   - [Project Setup](#project-setup)
+10. [Contribute to the Project](#contribute-to-the-project)
+11. [Credits](#credits)
 
 ---
 
