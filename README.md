@@ -78,8 +78,6 @@ Kaishita/
 │   ├── CMakeLists.txt      # Build configuration
 │
 ├── Website/                # Server code (handles vending machine communication)
-│   ├── requirements.txt    # Add coment here (3 ~ 4 words)
-│   ├── site.py             # Add coment here (3 ~ 4 words)
 │
 ├── Analysis/               # Automated purchase data analysis
 │   ├── analise_compras.py  # Script for trend analysis
